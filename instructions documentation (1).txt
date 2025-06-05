@@ -1,0 +1,53 @@
+
+Blackcoffer Text Analysis Project
+
+---------------------------------------------------
+a) File: blackcoffer_text_analysis.py
+---------------------------------------------------
+This Python script performs the following:
+- Reads 'Input.xlsx' containing URL_ID and URLs.
+- Loads article text files from 'articles/' folder.
+- Cleans the text using StopWords from the 'StopWords/' folder.
+- Uses 'MasterDictionary/' to calculate sentiment scores.
+- Computes 14 textual features including polarity, subjectivity, FOG index, and more.
+- Outputs the results to 'Blackcoffer_Text_Analysis_Output.xlsx'.
+
+---------------------------------------------------
+b) Output File: Blackcoffer_Text_Analysis_Output.xlsx
+---------------------------------------------------
+The output Excel file contains:
+- All input data from 'Input.xlsx'
+- 14 derived textual metrics following Blackcoffer's format.
+
+---------------------------------------------------
+c) Instructions to Run
+---------------------------------------------------
+1. Make sure the following folders/files are in the same directory:
+   - Input.xlsx
+   - articles/ (contains all article .txt files named by URL_ID)
+   - StopWords/ (all stopword files)
+   - MasterDictionary/ (contains positive-words.txt, negative-words.txt)
+   - blackcoffer_text_analysis.py
+
+2. Install required Python libraries (if not already installed):
+   pip install pandas nltk textblob openpyxl
+
+3. Run the script using:
+   python blackcoffer_text_analysis.py
+
+4. It will generate: 'Blackcoffer_Text_Analysis_Output.xlsx'
+
+---------------------------------------------------
+Dependencies Required
+---------------------------------------------------
+- pandas
+- nltk
+- textblob
+- openpyxl
+
+Make sure to also download NLTK data once in your Python environment:
+>>> import nltk
+>>> nltk.download('punkt')
+
+---------------------------------------------------
+End of README
